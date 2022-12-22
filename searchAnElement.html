@@ -1,0 +1,35 @@
+<!DOCtype Html>
+
+<html> 
+    <Head><title>Finding an element in an Array</title></Head>
+<script>
+      var myArr = ["PHP", "CSS","Javascript","Hello","Laravel","Node"];
+      function search()
+{
+      var txt = document.getElementById('txt').value;
+      var index = myArr.indexOf(txt);
+
+      if(index !== -1)
+      {
+        alert ('True');
+      } else{
+        alert ('False');
+      }
+}
+</script>
+
+<head>
+  <body>
+      <input type="text" name="txt" id="txt" />
+      <button onclick="search();">Search</button>
+
+      <p id="pgh"></p>
+
+<script>
+    document.getElementById('pgh').inner =myArr;
+</script>
+  </body>
+</head>  
+
+</script>
+</html>
